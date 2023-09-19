@@ -1,0 +1,39 @@
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+.my-carousel .slick-prev, .my-carousel .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    color: #181818;
+    font-size: 16px; /* Adjusted font size */
+    text-align: center;
+    z-index: 1;
+}
+
+.my-carousel .slick-prev:before, .my-carousel .slick-next:before {
+    content: ''; /* Remove default arrow */
+}
+
+.my-carousel .slick-prev:before {
+    content: '←'; /* Left arrow */
+}
+
+.my-carousel .slick-next:before {
+    content: '→'; /* Right arrow */
+}
+
+.my-carousel .slick-prev {
+    left: -2.5%;
+}
+
+.my-carousel .slick-next {
+    right: -2.5%;
+}
