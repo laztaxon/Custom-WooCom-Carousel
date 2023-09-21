@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Custom WooCom Carousel
-Description: A custom carousel plugin for WooCommerce products that allows you to filter by category, tag, new products, and hot sellers.
+Description: A custom carousel plugin for WooCommerce products that allows you to filter by category, tag, new products, and hot sellers. Check out the <a href="https://github.com/laztaxon/Custom-WooCom-Carousel/blob/main/README.md">README</a> for more information.
 Version: 2.0
 Author: Marcelo Rondon
 Author URI: https://www.cello.design
