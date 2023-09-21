@@ -4,7 +4,7 @@ window.__forceSmoothScrollPolyfill__ = true;
 jQuery(document).ready(function($) {
     // Initialize the carousel
     $('.my-carousel').slick({
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: false,
         speed: 500,

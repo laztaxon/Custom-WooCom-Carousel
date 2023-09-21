@@ -40,10 +40,10 @@ function product_carousel_shortcode($atts) {
 
     // Add filters for category and tag
     if ($atts['category']) {
-        $args['category'] = array($atts['category']);
+    $args['category'] = array_map('trim', explode(',', $atts['category'])); // Pass category IDs correctly
     }
     if ($atts['tag']) {
-        $args['tag'] = $atts['tag'];
+    $args['tag'] = $atts['tag'];
     }
 
     // Fetch WooCommerce product data
