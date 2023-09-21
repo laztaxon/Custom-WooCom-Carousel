@@ -22,6 +22,7 @@ function product_carousel_shortcode($atts) {
         'orderby' => 'date',
         'order' => 'ASC',
         'limit' => 10,
+        'post_status' => 'publish', // Exclude drafts and private pages
     );
 
     // Add filters for new and hot seller products
