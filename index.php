@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: Custom WooCom Product Carousel
-Description: A custom carousel plugin for WooCommerce products.
+Plugin Name: Custom WooCom Carousel
+Description: A custom carousel plugin for WooCommerce products that allows you to filter by category, tag, new products, and hot sellers.
 Version: 2.0
 Author: Marcelo Rondon
 Author URI: https://www.cello.design
@@ -21,6 +21,7 @@ function product_carousel_shortcode($atts) {
     $args = array(
         'orderby' => 'date',
         'order' => 'ASC',
+        'limit' => 10,
     );
 
     // Add filters for new and hot seller products
@@ -52,14 +53,14 @@ function product_carousel_shortcode($atts) {
 
     // Loop through the products
     foreach ($products as $product) {
-        if ($product->is_in_stock()) { // Check if the product is in stock
+        if ($product->is_in_stock()) { // Check if the product is in stock before outputting it
             $image_id = $product->get_image_id();
             $image_url_full = wp_get_attachment_image_src($image_id, 'full')[0];
             $image_url_medium = wp_get_attachment_image_src($image_id, 'medium')[0];
             $product_url = get_permalink($product->get_id());
-            $output .= '<div class="my-carousel-item">';
+            $output .= '<div class="my-carousel-item">'; 
             $output .= '<a href="' . $product_url . '">';
-            $output .= '<div class="item-container" style="width: ' . $image_url_medium[1] . 'px; height: ' . $image_url_medium[2] . 'px;">'; // Add this line
+            $output .= '<div class="item-container" style="width: ' . $image_url_medium[1] . 'px; height: ' . $image_url_medium[2] . 'px;">'; // Output the product image
             $output .= '<img src="' . $image_url_full . '" alt="' . $product->get_name() . '" title="' . $product->get_name() . '" style="max-width:100%; height:auto;">';
             $output .= '<h4>' . $product->get_name() . '</h4>'; // Output the product title
             $output .= '</div>';
