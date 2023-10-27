@@ -1,6 +1,6 @@
 .my-carousel {
     position: relative; /* Position relative to the nearest positioned ancestor */
-    padding: 0 10%; /* Add horizontal padding */
+    padding: 0 25%; /* Add horizontal padding */
     overflow: visible; /* Ensure the partially visible slide is not hidden */
 }
 
@@ -15,7 +15,7 @@
 /* Adjust padding for smaller screens */
 @media screen and (max-width: 768px) {
     .my-carousel {
-        padding: 0 5%; /* Reduce padding */
+        padding: 0 20%; /* Reduce padding */
     }
 
     .my-carousel .slick-list {
