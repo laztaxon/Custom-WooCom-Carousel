@@ -31,9 +31,11 @@ jQuery(document).ready(function($) {
     });
 
     // Hide dots if there's only one page
-    var slideCount = $carousel.slick('getSlick').slideCount;
-    var slidesToShow = $carousel.slick('getSlick').options.slidesToShow;
-    if (slideCount <= slidesToShow) {
-        $carousel.find('.slick-dots').hide();
-    }
+    setTimeout(function() {
+        var slideCount = $carousel.slick('getSlick').slideCount;
+        var slidesToShow = $carousel.slick('getSlick').options.slidesToShow;
+        if (slideCount <= slidesToShow) {
+            $carousel.find('.slick-dots').hide();
+        }
+    }, 0); // Delay the check until after the carousel has fully initialized
 });

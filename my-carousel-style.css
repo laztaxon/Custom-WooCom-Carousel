@@ -51,7 +51,7 @@ h4 {
 /* Styles for the container of the navigation dots */
 .my-carousel .slick-dots {
     position: absolute; /* Position relative to the nearest positioned ancestor */
-    bottom: 5vh; /* Position at the bottom of the carousel */
+    bottom: 25px; /* Position at the bottom of the carousel */
     list-style: none; /* Remove default list styles */
     display: flex; /* Use flexbox layout */
     align-items: center; /* Center items vertically */
