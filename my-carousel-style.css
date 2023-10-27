@@ -50,25 +50,25 @@ h4 {
 /* Styles for the container of the navigation dots */
 .my-carousel .slick-dots {
     position: absolute; /* Position relative to the nearest positioned ancestor */
-    bottom: 2vh; /* Position at the bottom of the carousel */
+    bottom: 5vh; /* Position at the bottom of the carousel */
     list-style: none; /* Remove default list styles */
     display: flex; /* Use flexbox layout */
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
-    width: 80%; /* take 80% of the .my-carousel container  */
+    width: 50%; /* take 50% of the .my-carousel container  */
 }
 
 /* Styles for each navigation dot */
 .my-carousel .slick-dots li {
-    margin: 0 10%; /* Add horizontal margins */
+    margin: 0 5%; /* Add horizontal margins */
 }
 
 /* Styles for the button of each navigation dot */
 .my-carousel .slick-dots li button {
     display: block; /* Display as block */
-    width: 1.5vh; /* Set width */
-    height: 1.5vh; /* Set height */
-    padding: 0.5vh; /* Add padding */
+    width: 1vh; /* Set width */
+    height: 1vh; /* Set height */
+    padding: 0.25vh; /* Add padding */
     cursor: pointer; /* Change cursor to pointer on hover */
     border: 0; /* Remove border */
     outline: none; /* Remove outline */
