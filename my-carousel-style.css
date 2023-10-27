@@ -1,4 +1,5 @@
 .my-carousel {
+    position: relative; /* Position relative to the nearest positioned ancestor */
     padding: 0 10%; /* Add horizontal padding */
     overflow: visible; /* Ensure the partially visible slide is not hidden */
 }
@@ -55,7 +56,7 @@ h4 {
     display: flex; /* Use flexbox layout */
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
-    width: 50%; /* take 50% of the .my-carousel container  */
+    width: 100%; /* take 50% of the .my-carousel container  */
 }
 
 /* Styles for each navigation dot */
