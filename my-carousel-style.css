@@ -1,39 +1,82 @@
+.my-carousel {
+    padding: 0 10%; /* Add horizontal padding */
+    overflow: visible; /* Ensure the partially visible slide is not hidden */
+}
+
+.my-carousel .slick-list {
+    margin: 0 -10%; /* Counteract the padding on .my-carousel */
+}
+
+.my-carousel .slick-slide {
+    margin: 0 10px; /* Add horizontal margin to slides */
+}
+
+/* Adjust padding for smaller screens */
+@media screen and (max-width: 768px) {
+    .my-carousel {
+        padding: 0 5%; /* Reduce padding */
+    }
+
+    .my-carousel .slick-list {
+        margin: 0 -5%; /* Adjust negative margin */
+    }
+
+    .my-carousel .slick-slide {
+        margin: 0 5px; /* Adjust slide margin */
+    }
+}
+
+/* Styles for the container of each item in the carousel */
 .item-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
 }
+
+/* Styles for h4 elements */
 h4 {
-    text-align: center;
-}
-.my-carousel .slick-prev, .my-carousel .slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    color: #181818;
-    font-size: 16px; /* Adjusted font size */
-    text-align: center;
-    z-index: 1;
+    text-align: center; /* Center text */
+    font-size: small;
 }
 
-.my-carousel .slick-prev:before, .my-carousel .slick-next:before {
-    content: ''; /* Remove default arrow */
+/* Increase font size for larger screens */
+@media screen and (min-width: 768px) {
+    h4 {
+        font-size: medium;
+    }
 }
 
-.my-carousel .slick-prev:before {
-    content: '←'; /* Left arrow */
+/* Styles for the container of the navigation dots */
+.my-carousel .slick-dots {
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    bottom: 2vh; /* Position at the bottom of the carousel */
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    width: 80%; /* take 80% of the .my-carousel container  */
 }
 
-.my-carousel .slick-next:before {
-    content: '→'; /* Right arrow */
+/* Styles for each navigation dot */
+.my-carousel .slick-dots li {
+    margin: 0 10%; /* Add horizontal margins */
 }
 
-.my-carousel .slick-prev {
-    left: -2.5%;
+/* Styles for the button of each navigation dot */
+.my-carousel .slick-dots li button {
+    display: block; /* Display as block */
+    width: 1.5vh; /* Set width */
+    height: 1.5vh; /* Set height */
+    padding: 0.5vh; /* Add padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border: 0; /* Remove border */
+    outline: none; /* Remove outline */
+    background: #181818; /* Set background color to black */
+    border-radius: 50%; /* Make it circular */
 }
 
-.my-carousel .slick-next {
-    right: -2.5%;
+/* Styles for the button of the active navigation dot */
+.my-carousel .slick-dots li.slick-active button {
+    background: #0E9C4B; /* Set background color to bright green */
 }

@@ -9,8 +9,7 @@ jQuery(document).ready(function($) {
         autoplay: false,
         speed: 500,
         cssEase: 'linear',
-        prevArrow: "<button type='button' class='slick-prev'></button>",
-        nextArrow: "<button type='button' class='slick-next'></button>",
+        dots: true, // Add this line
         responsive: [
             {
                 breakpoint: 1024,
