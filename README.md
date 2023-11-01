@@ -1,6 +1,6 @@
 # Custom WooCom Carousel
 
-Custom WooCom Carousel is a WordPress plugin that allows you to create a custom carousel of WooCommerce products. The plugin includes support for filtering products by category, tag, new products, and hot sellers. This new branched variant focuses on improving User Experience by changing the navigation from arrows to dots.
+Custom WooCom Carousel is a WordPress plugin that allows you to create a custom carousel of WooCommerce products. This carousel will the woocommerce product image and title. The plugin includes support for filtering products by category, tag, new products, and hot sellers. This new branched variant focuses on improving UX by changing the navigation from arrows to dots with labeled numbers to let users know how many products there are in the carousel, especially on mobile.
 
 ## Installation
 
@@ -22,29 +22,29 @@ To use the plugin, add the `[product_carousel]` shortcode to any post or page. T
 Here's an example shortcode:
 
 ### By Category
-`[product_carousel category="clothing" new_products="false" hot_sellers="false"]`
+`[product_carousel category="clothing"]`
 
 This will display a carousel of all clothing category products.
 
 ### By Brand
-`[product_carousel tag="brand name" new_products="false" hot_sellers="false"]`
+`[product_carousel tag="brand_name"]`
 
-This will display all products with the "brand name" tag. Replace "brand name" with the specific brand and make sure you are tagging it in the WooCommerce product data.
+This will display all products with the "brand name" tag. Replace "brand_name" with the specific brand and make sure you are tagging it in the WooCommerce product data.
 
 ### New Products
-`[product_carousel new_products="true" hot_sellers="false"]`
+`[product_carousel new_products="true"]`
 
 This will display all new products.
 
 ### Hot Sellers
-`[product_carousel new_products="false" hot_sellers="true"]`
+`[product_carousel hot_sellers="true"]`
 
 This will display all products sorted by sales.
 
 ### Complex
 `[product_carousel category="clothing" tag="brand name" new_products="true" hot_sellers="true"]`
 
-This will display a carousel of clothing products with the "brand" tag that were added within the last week and sorted by the number of sales.
+This will display a carousel of clothing products with the "brand" tag that were added within the last two weeks and sorted by the number of sales.
 
 ## Development
 
@@ -59,7 +59,7 @@ To contribute to the development of the plugin, follow these steps:
 
 ## Credits
 
-Custom WooCom Carousel was created by Marcelo Rondon.
+Custom WooCom Carousel was created by Cello Rondon (laztaxon).
 
 ## License
 
