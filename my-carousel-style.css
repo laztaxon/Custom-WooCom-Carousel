@@ -13,14 +13,28 @@
 
 /* Styles for the carousel */
 .carousel-wrapper {
-    overflow: hidden;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Centers the wrapper */
 }
 
+@media screen and (max-width: 768px) {
+    .carousel-wrapper {
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto; /* Centers the wrapper */
+    }
+}
 .my-carousel {
     margin-left: 0;
-    margin-right: -10%; /* Adjust this value as needed */
+    margin-right: 0; /* Adjust this value as needed */
 }
-
+@media screen and (max-width: 768px){
+    .my-carousel {
+     margin-left: 0;
+     margin-right: -10%; /* Adjust this value as needed */
+    }   
+}
 .my-carousel .slick-list {
     margin: 0 -10%; /* Counteract the padding on .my-carousel */
 }
