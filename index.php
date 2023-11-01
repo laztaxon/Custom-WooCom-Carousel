@@ -29,7 +29,7 @@ function product_carousel_shortcode($atts) {
     if ($atts['new_products']) {
         $args['date_query'] = array(
             array(
-                'after' => '1 week ago',
+                'after' => '2 weeks ago',
             ),
         );
     }

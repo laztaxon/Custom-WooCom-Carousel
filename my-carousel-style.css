@@ -3,6 +3,8 @@
     width: 100%;
     max-width: 1200px; /* Adjust as needed */
     margin: 0 auto; /* Centers the container */
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -17,6 +19,8 @@
     width: 100%;
     max-width: 1200px; /* Adjust as needed */
     margin: 0 auto; /* Centers the wrapper */
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -29,6 +33,8 @@
 .my-carousel {
     margin-left: 0;
     margin-right: 0; /* Adjust this value as needed */
+    align-items: center;
+    justify-content: center;
 }
 @media screen and (max-width: 768px){
     .my-carousel {
@@ -38,6 +44,8 @@
 }
 .my-carousel .slick-list {
     margin: 0 0; /* Counteract the padding on .my-carousel */
+    align-items: center;
+    justify-content: center;
 }
 
 /* Adjust padding for smaller screens */
@@ -64,6 +72,8 @@
 h4 {
     text-align: center; /* Center text */
     font-size: x-small;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Increase font size for larger screens */
