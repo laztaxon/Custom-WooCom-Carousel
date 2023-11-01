@@ -51,8 +51,8 @@ function product_carousel_shortcode($atts) {
 
     // Check if there are no products
     if (empty($products)) {
-    return 'Sorry we are out of stock for this category';
-    }
+    return '<h4 style="text-align: center;">Sorry, we are out of stock for this category.</h4>';
+}
 
     // Start the carousel
     $output = '<div class="carousel-container"><div class="my-carousel">';
