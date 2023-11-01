@@ -32,11 +32,11 @@
 @media screen and (max-width: 768px){
     .my-carousel {
      margin-left: 0;
-     margin-right: -10%; /* Adjust this value as needed */
+     margin-right: 0; /* Adjust this value as needed */
     }   
 }
 .my-carousel .slick-list {
-    margin: 0 -10%; /* Counteract the padding on .my-carousel */
+    margin: 0 0; /* Counteract the padding on .my-carousel */
 }
 
 .my-carousel .slick-slide {
@@ -46,12 +46,11 @@
 /* Adjust padding for smaller screens */
 @media screen and (max-width: 768px) {
     .my-carousel {
-        padding: 0 20%; /* Reduce padding */
+        padding: 0 5%; /* Reduce padding */
     }
 
     .my-carousel .slick-list {
-        width: 150%; /* Make the carousel 150% the width of the viewport */
-        padding-right: 50%; /* Add padding to the right of the carousel */
+        width: 100%; /* Make the carousel 150% the width of the viewport */
     }
 
     .my-carousel .slick-slide {
