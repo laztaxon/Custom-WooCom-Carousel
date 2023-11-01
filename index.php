@@ -50,7 +50,7 @@ function product_carousel_shortcode($atts) {
     $products = wc_get_products($args);
 
     // Start the carousel
-    $output = '<div class="my-carousel">';
+    $output = '<div class="carousel-container"><div class="my-carousel">';
 
     // Loop through the products
     foreach ($products as $product) {
@@ -71,11 +71,12 @@ function product_carousel_shortcode($atts) {
     }
 
     // End the carousel
-    $output .= '</div>';
+    $output .= '</div></div>';
+
 
     // Return the carousel
     return $output;
-}
+    }
 add_shortcode('product_carousel', 'product_carousel_shortcode');
 
 function enqueue_carousel_assets() {

@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
             {
                 breakpoint: 670,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 1.5, // Show 1.5 slides
                     slidesToScroll: 1
                 }
             }

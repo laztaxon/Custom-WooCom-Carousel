@@ -1,7 +1,13 @@
+/* Styles for the container of the carousel and the navigation dots */
+.carousel-container {
+    position: relative; /* Position relative to the nearest positioned ancestor */
+}
+
+/* Styles for the carousel */
 .my-carousel {
     position: relative; /* Position relative to the nearest positioned ancestor */
     padding: 0 25%; /* Add horizontal padding */
-    overflow: visible; /* Ensure the partially visible slide is not hidden */
+    overflow: hidden; /* Hide the overflow */
 }
 
 .my-carousel .slick-list {
@@ -19,7 +25,8 @@
     }
 
     .my-carousel .slick-list {
-        margin: 0 -5%; /* Adjust negative margin */
+        width: 150%; /* Make the carousel 150% the width of the viewport */
+        padding-right: 50%; /* Add padding to the right of the carousel */
     }
 
     .my-carousel .slick-slide {
@@ -49,14 +56,14 @@ h4 {
 }
 
 /* Styles for the container of the navigation dots */
-.my-carousel .slick-dots {
+.carousel-container .slick-dots {
     position: absolute; /* Position relative to the nearest positioned ancestor */
-    bottom: 25px; /* Position at the bottom of the carousel */
+    bottom: 0; /* Position at the bottom of the container */
     list-style: none; /* Remove default list styles */
     display: flex; /* Use flexbox layout */
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
-    width: 100%; /* take 50% of the .my-carousel container  */
+    width: 100%; /* take 50% of the .carousel-container */
 }
 
 /* Styles for each navigation dot */
