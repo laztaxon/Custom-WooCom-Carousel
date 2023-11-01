@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
     // Initialize the carousel
     $carousel.slick({
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         autoplay: false,
         speed: 500,
         cssEase: 'linear',
@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
                 breakpoint: 960,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1,
                 }
             },
             {
