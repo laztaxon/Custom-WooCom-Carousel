@@ -1,6 +1,6 @@
 # Custom WooCom Carousel
 
-Custom WooCom Carousel is a WordPress plugin that allows you to create a custom carousel of WooCommerce products. This carousel will the woocommerce product image and title. The plugin includes support for filtering products by category, tag, new products, and hot sellers. This new branched variant focuses on improving UX by changing the navigation from arrows to dots with labeled numbers to let users know how many products there are in the carousel, especially on mobile.
+Custom WooCom Carousel is a WordPress plugin that allows you to create a custom carousel of WooCommerce products. This carousel will print the woocommerce product image and title. The plugin includes support for filtering products by category, tag, new products, and hot sellers. This new branched variant focuses on improving UX by changing the navigation from arrows to dots with labeled numbers to let users know how many products there are in the carousel, especially on mobile.
 
 ## Installation
 
