@@ -1,9 +1,14 @@
 /* Styles for the container of the carousel and the navigation dots */
 .carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; /* Position relative to the nearest positioned ancestor */
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Centers the container */
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%; /* Allows the container to take the full width on smaller screens */
+    }
 }
 
 /* Styles for the carousel */
