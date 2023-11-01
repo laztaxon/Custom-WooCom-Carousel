@@ -82,7 +82,7 @@ h4 {
 /* Styles for the container of the navigation dots */
 .carousel-container .slick-dots {
     position: absolute;
-    bottom: -10%;
+    bottom: -7%;
     list-style: none;
     display: flex;
     align-items: center;
@@ -90,12 +90,15 @@ h4 {
     width: 100%; /* Ensures the dots container takes the full width of the carousel */
     left: 0;
 }
-
+@media screen and (max-width: 768px) {
+    .carousel-container .slick-dots {
+        bottom: -8%;
+    }
+}
 /* Styles for each navigation dot */
 .my-carousel .slick-dots li {
     margin: 0 2.5%; /* Add horizontal margins */
-}
-
+    }
 /* Styles for the button of each navigation dot */
 .my-carousel .slick-dots li button {
     display: block; /* Display as block */
