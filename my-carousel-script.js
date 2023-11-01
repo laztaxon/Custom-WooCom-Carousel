@@ -29,7 +29,6 @@ jQuery(document).ready(function($) {
             }
         ]
     });
-});
     // Hide dots if there's only one page
 $carousel.on('init', function(event, slick) {
     setTimeout(function() {
@@ -39,4 +38,5 @@ $carousel.on('init', function(event, slick) {
             $carousel.find('.slick-dots').hide();
         }
     }, 0);
+});
 });

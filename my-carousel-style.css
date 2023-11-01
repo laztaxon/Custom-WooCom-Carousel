@@ -92,14 +92,14 @@ h4 {
 }
 /* Styles for each navigation dot */
 .my-carousel .slick-dots li {
-    margin: 0 2.5%; /* Add horizontal margins */
+    margin: 0 2%; /* Add horizontal margins */
     }
 /* Styles for the button of each navigation dot */
 .my-carousel .slick-dots li button {
     display: block; /* Display as block */
     width: .5vh; /* Set width */
     height: .5vh; /* Set height */
-    padding: 0.1vh; /* Add padding */
+    padding: 0.05vh; /* Add padding */
     cursor: pointer; /* Change cursor to pointer on hover */
     border: 0; /* Remove border */
     outline: none; /* Remove outline */
