@@ -8,6 +8,7 @@
 @media screen and (max-width: 768px) {
     .carousel-container {
         max-width: 100%; /* Allows the container to take the full width on smaller screens */
+        margin: 0 auto; /* Centers the container */
     }
 }
 
@@ -39,22 +40,14 @@
     margin: 0 0; /* Counteract the padding on .my-carousel */
 }
 
-.my-carousel .slick-slide {
-    margin: 0 10px; /* Add horizontal margin to slides */
-}
-
 /* Adjust padding for smaller screens */
 @media screen and (max-width: 768px) {
     .my-carousel {
-        padding: 0 5%; /* Reduce padding */
+        padding: 0 2.5%; /* Reduce padding */
     }
 
     .my-carousel .slick-list {
         width: 100%; /* Make the carousel 150% the width of the viewport */
-    }
-
-    .my-carousel .slick-slide {
-        margin: 0 5px; /* Adjust slide margin */
     }
 }
 
@@ -63,6 +56,7 @@
     display: flex; /* Use flexbox layout */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
     text-align: center; /* Center text */
 }
 
