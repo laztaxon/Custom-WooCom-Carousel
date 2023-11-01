@@ -1,13 +1,19 @@
 /* Styles for the container of the carousel and the navigation dots */
 .carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative; /* Position relative to the nearest positioned ancestor */
 }
 
 /* Styles for the carousel */
+.carousel-wrapper {
+    overflow: hidden;
+}
+
 .my-carousel {
-    position: relative; /* Position relative to the nearest positioned ancestor */
-    padding: 0 25%; /* Add horizontal padding */
-    overflow: hidden; /* Hide the overflow */
+    margin-left: 0;
+    margin-right: -10%; /* Adjust this value as needed */
 }
 
 .my-carousel .slick-list {
@@ -57,31 +63,33 @@ h4 {
 
 /* Styles for the container of the navigation dots */
 .carousel-container .slick-dots {
-    position: absolute; /* Position relative to the nearest positioned ancestor */
-    bottom: 0; /* Position at the bottom of the container */
-    list-style: none; /* Remove default list styles */
-    display: flex; /* Use flexbox layout */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    width: 100%; /* take 50% of the .carousel-container */
+    position: absolute;
+    bottom: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensures the dots container takes the full width of the carousel */
+    left: 0; /* Aligns the dots container to the left edge of the carousel */
 }
 
 /* Styles for each navigation dot */
 .my-carousel .slick-dots li {
-    margin: 0 5%; /* Add horizontal margins */
+    margin: 0 2.5%; /* Add horizontal margins */
 }
 
 /* Styles for the button of each navigation dot */
 .my-carousel .slick-dots li button {
     display: block; /* Display as block */
-    width: 1vh; /* Set width */
-    height: 1vh; /* Set height */
-    padding: 0.25vh; /* Add padding */
+    width: .5vh; /* Set width */
+    height: .5vh; /* Set height */
+    padding: 0.1vh; /* Add padding */
     cursor: pointer; /* Change cursor to pointer on hover */
     border: 0; /* Remove border */
     outline: none; /* Remove outline */
     background: #181818; /* Set background color to black */
     border-radius: 50%; /* Make it circular */
+    font-size: x-small;
 }
 
 /* Styles for the button of the active navigation dot */
