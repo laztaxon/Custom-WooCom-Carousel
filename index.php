@@ -49,9 +49,13 @@ function product_carousel_shortcode($atts) {
     // Fetch WooCommerce product data
     $products = wc_get_products($args);
 
+    // Check if there are no products
+    if (empty($products)) {
+    return 'Sorry we are out of stock for this category';
+    }
+
     // Start the carousel
     $output = '<div class="carousel-container"><div class="my-carousel">';
-
     // Loop through the products
     foreach ($products as $product) {
         if ($product->is_in_stock()) { // Check if the product is in stock before outputting it
