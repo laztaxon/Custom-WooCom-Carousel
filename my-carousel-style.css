@@ -81,14 +81,12 @@ h4 {
 
 /* Styles for the container of the navigation dots */
 .carousel-container .slick-dots {
-    position: absolute;
     bottom: -7%;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%; /* Ensures the dots container takes the full width of the carousel */
-    left: 0;
 }
 /* Styles for each navigation dot */
 .my-carousel .slick-dots li {
